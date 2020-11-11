@@ -1,6 +1,21 @@
 import { useState } from "react";
+
 function Nome() {
   const [nome, setNome] = useState("amigo(a)");
+  const [mode, setMode] = useState('Light Background');
+
+  function addMode(){
+    var modo = document.getElementById('modo');
+    if(modo.value== 'Light Background'){
+      document.body.style.background = "#dbdbdb";
+      setMode('Dark Background');
+    }
+    else{
+      setMode('Light Background');
+      document.body.style.background = "#27252c";
+
+    }
+  }
 
   function addName() {
     var newNome = document.getElementById("nomeid").value;
@@ -11,6 +26,9 @@ function Nome() {
   });
     setNome(newNome);
   }
+
+
+
   return (
     <div>
       <div class="container">
@@ -21,16 +39,16 @@ function Nome() {
             <input
               type="text"
               id="nomeid"
-              placeholder="Digite seu nome"
+              placeholder="Digite seu nome"s
             ></input>
             <input onClick={addName} id="inputName" value="Enviar" type="submit">
             </input>
           </div>
       </div>
+      <input type="submit" id="modo" value={mode} onClick={addMode}></input>
     </div>
-  );
+  )
 }
-
 function index() {
   return (
     <Nome />

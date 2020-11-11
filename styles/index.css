@@ -25,32 +25,30 @@ h2 small {
   display: block;
 }
 .group {
+  display: flex;
   position: relative;
   margin-bottom: 45px;
-  display: flex;
   justify-content: center;
   align-items: baseline;
-  
 }
 input {
   border: none;
-  outline:none;
+  outline: none;
   border-radius: 5px;
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
   width: 300px;
   transition: 0.3s;
-
 }
-input:hover{
+input:hover {
   border-radius: 30px;
   border-bottom: 3px solid yellowgreen;
 }
 
 #inputName {
   border: none;
-  outline:none;
+  outline: none;
   background: #26ae90;
   margin-left: 20px;
   border-radius: 5px;
@@ -58,7 +56,28 @@ input:hover{
   height: 40px;
   cursor: pointer;
 }
-#inputName:hover{
+#inputName:hover {
   background: #3ce0bd;
+}
+#link{
+  color: white;
+}
 
+#modo {
+  margin: 30px auto 0;
+  display: block;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 300px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #558a7e;
+  
+}
+
+#modo:hover {
+  background: #73b3a4;
 }

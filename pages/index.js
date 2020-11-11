@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Link from 'next/link'
+
 function Nome() {
   const [nome, setNome] = useState("amigo(a)");
 
@@ -25,6 +27,7 @@ function Nome() {
             ></input>
             <input onClick={addName} id="inputName" value="Enviar" type="submit">
             </input>
+            <Link id="link" href="./screenmode"><a>Página de Screem Mode!</a></Link>
           </div>
       </div>
     </div>
